@@ -1,0 +1,30 @@
+﻿@model List<FoodyTekmerEntityLayer.Concrete.Product>
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2># Ürün Listesi</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Ürün Adı</th>
+            <th>Eski Fiyat</th>
+            <th>Yeni Fiyat</th>
+            <th>Durum</th>  
+            <th class="text-center">Sil</th>
+            <th class="text-center">Güncelle</th>
+        </tr>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.ProductId</td>
+                <td>@item.Name</td>
+                <td>@item.OldPrice</td>
+                <td>@item.NewPrice</td>
+                <td style=@(item.Status ? "background-color:#82E0AA" : "background-color:#D98880")>@(item.Status ? "Aktif" : "Pasif")</td>
+                <td class="text-center"><a href="/Product/DeleteProduct/@item.ProductId" class="btn btn-danger"> Sil</a></td>
+                <td class="text-center"><a href="/Product/UpdateProduct/@item.ProductId" class="btn btn-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/Product/CreateProduct/" class="btn btn-primary">Ekle</a>
