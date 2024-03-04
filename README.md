@@ -15,9 +15,9 @@ Giriş Sayfası
 ![image](https://github.com/omerkarakuzu/FoodyTekmer/assets/80119008/6c5d9f0b-4dab-4257-b11a-c5a0d74b72d6)
 
 ### Proje Kullanılan Teknolojiler
-> ⚫ Asp .Net Core 6.0
-> ⚫Resository Design Pattern
-> ⚫ N-Tier Architecture
-> ⚫ Code First
-> ⚫ MS SQL Server
-> ⚫ Entity Framework
+> - Asp .Net Core 6.0
+> - Resository Design Pattern
+> - N-Tier Architecture
+> - Code First
+> - MS SQL Server
+> - Entity Framework
